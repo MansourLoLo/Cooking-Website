@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  position: fixed;
+  background-color: #00000037;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu{
+  display: none;
+}
+.side-menu{
+  display: none;
+}
+.logo {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+.nav ul li {
+  font-size: 2em;
+  gap: 3em;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+#nav-font-signIn {
+  background-color: #5d8e19;
+  padding: 10px 2vw;
+  border-radius: 5px;
+}
+.main-content {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-background {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.title {
+  width: 45vw;
+  height: 50vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.title-text {
+  height: 40%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5em;
+}
+.title-search {
+  height: 55%;
+  font-size: 2em;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.search-bar {
+  width: 80%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #5d8e19;
+  border-radius: 10px;
+  background-color: #ffffff;
+  opacity: 30%;
+}
+.search-bar i {
+  margin: 3%;
+  color: #000000;
+  width: auto;
+}
+.search-bar input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.8em;
+  opacity: 100%;
+}
+.font-orange {
+  color: #db6b1f;
+}
+.info-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.info-video {
+  width: 50vw;
+  height: 50vh;
+}
+.info-video iframe {
+  width: 100%;
+  height: 100%;
+}
+.info-text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.info-title {
+  width: 100%;
+  height: 20%;
+  font-size: 2.5em;
+}
+.info-email {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.info-email img {
+  width: 12%;
+  border-radius: 100%;
+}
+.info-article {
+  width: 70%;
+  height: 45%;
+  margin-left: 10%;
+  font-size: 1.4em;
+}
+.download-app {
+  width: 100%;
+  font-size: 1.2em;
+}
+.img-download-store{
+  display: flex;
+  gap: 1em;
+}
+.img-download-store img{
+  width: 45%;
+}
+.magazines-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b0c58c;
+  border: 1px solid #000000;
+  gap: 5em;
+}
+.title-magazines {
+  width: 100vw;
+  height: 22vh;
+  margin-top: 4%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.magazines-article {
+  width: 60%;
+  font-size: 1.6rem;
+  text-align: center;
+  font-style: oblique;
+}
+.magazines-cards {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2em;
+  gap: 2em;
+}
+.card {
+  width: 20vw;
+  height: 50vh;
+  max-width: 500px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+.img-magazine {
+  width: 100%;
+  height: 20vh;
+}
+.img-magazine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-magazine-profile-photo {
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  margin-top: -10vh;
+}
+.img-magazine-profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.magazine-text {
+  width: 100%;
+  height: 100%;
+  background-color: #f3d0ba;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.magazine-text h4 {
+  width: 80%;
+  height: 50%;
+  font-size: 1.3em;
+}
+.read-more {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-read-more {
+  width: 50%;
+  height: 80%;
+  font-size: 1.5em;
+  background-color: #db6b1f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.plates-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.plates-title {
+  width: 90%;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+.plates-info {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 5%;
+  gap: 2em;
+}
+.main-plate-grid {
+  grid-area: 1/1 / 3/-3;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-plate {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-plate-imgs {
+  width: 100%;
+  height: 60%;
+  border: 1px solid #000000;
+}
+.main-plate-imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-plate-title {
+  width: 100%;
+  height: auto;
+  font-size: 3rem;
+}
+.main-plate-description {
+  font-size: 1.8rem;
+}
+.plate-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  width: 100%;
+  height: 80%;
+}
+.plate-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #000000;
+}
+.plates {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  height: 100%;
+  border: 1px solid #000000;
+  font-size: 1.5em;
+}
+.plates-content {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.plates-content > img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border: 1px solid #000000;
+}
+.load-more {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.btn-load-more {
+  width: 50%;
+  height: 80%;
+  font-size: 1.5em;
+  background-color: #db6b1f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.may-like-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.may-like-title {
+  width: 90vw;
+  margin: 5%;
+  height: auto;
+  text-align: center;
+  font-size: 3em;
+}
+.may-like-content {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.may-like-plates {
+  width: 20vw;
+  min-width: 300px ;
+  max-width: 500px;
+  height: 35vh;
+  border: 1px solid #000000;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.may-like-plates-item {
+  width: 90%;
+  height: 90%;
+}
+.may-like-plates img {
+  width: 100%;
+  height: 70%;
+}
+
+.email-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.email-title {
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.email-title h1 {
+  font-size: 4.8em;
+}
+.email-title h3 {
+  font-size: 2em;
+}
+.email-box {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email-input {
+  width: 70%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+.email-input input {
+  border: 0;
+  font-size: 3em;
+  margin: 5px;
+  color: #000000;
+  width: 70%;
+  height: 100%;
+}
+.email-input button {
+  width: 20%;
+  height: 80%;
+  background-color: #db6b1f;
+  color: #000000;
+  font-size: 2em;
+  font-weight: bolder;
+  border: 1px solid #000000;
+}
+
+.contact-section {
+  width: 100vw;
+  background-color: #db6b1f;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #ffffff;
+}
+.social-medias {
+  width: 30vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social-media-street-signature {
+  width: 90%;
+}
+.social-media-street-signature img {
+  width: 100%;
+}
+.social-media-bar {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.social-media-bar i {
+  font-size: 3em;
+  height: 100%;
+  color: #000000;
+}
+.find-us,
+.useful-links {
+  width: 20vw;
+  height: 80%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.useful-links {
+  width: 20vw;
+}
+
+button:active,
+i:active{
+  transform: translateY(5px);
+}
+.img-download-store img:hover, 
+.img-magazine-profile-photo:hover,
+.info-email > img:hover,
+i:hover
+{
+  transform: scale(1.2);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    font-size: 0.5em;
+  }
+  .menu{
+    display: block;
+    font-size: 3em;
+    color: #ffffff;
+    margin: 5%;
+  }
+  .side-menu{
+    width: 75vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: block;
+    background-color: #9d5b2f;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    transform: translateX(-100%);
+    transition: transform .8s ease;
+  }
+  .caret-left-container{
+    font-size: 50px;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+  }
+  .side-menu ul{
+    width: 90%;
+    height: 80%;
+    font-size: 4em;
+    text-align: center;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  .side-menu ul li{
+    font-weight: bolder;
+  }
+  .header {
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .logo {
+    width: 60vw;
+    height: 80px;
+  }
+  .nav ul{
+    justify-content: space-between;
+  }
+  .nav ul li {
+    display: none;
+  }
+  #nav-font-signIn {
+    display: block;
+    margin-left: auto;
+    margin-right: 1em;
+  }
+  main{
+    width: 100%;
+  }
+  .title{
+    width: 90vw;
+    height: 70%;
+  }
+  .title div{
+    margin: 5%;
+  }
+  .title-text{
+    font-size: 4em;
+    height: 60%;
+  }
+  .title-search{
+    height: 10vh;
+  }
+  .info-video{
+    margin: 5%;
+  }
+  .main-plate-grid{
+    grid-column: 1/-1;
+    grid-row: span 3;
+  }
+  .plates{
+    grid-column: -4/-1;
+  }
+  .info-video{
+    width: 90vw;
+  }
+  .download-app img{
+    width: 40%;
+  }
+  .magazines-cards{
+    flex-wrap: wrap;
+  }
+  .img-magazine-profile-photo{
+    width: 25vw;
+  }
+  .magazine-text h4{
+    font-size: 2em;
+  }
+  .magazines-article{
+    font-size: 16px;
+  }
+  .info-text{
+    width: 90vw;
+    margin: 5%;
+    gap: 1.2em;
+    font-size: 1.5em;
+  }
+  .btn-load-more{
+    font-size: 4em;
+  }
+  .email-input{
+    flex-direction: column;
+  }
+  .email-input input{
+    width: 100%;
+    text-align: center;
+  }
+  .email-input button{
+    font-size: 3em;
+    width: 90%;
+    margin-bottom: 3%;
+  }
+  .contact-section{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .contact-section > div{
+    width: 70vw;
+    margin: 5%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 0.6em;
+  }
+  .main-content{
+    width: 100vw;
+  }
+  .plates-title{
+    font-size: 25px;
+  }
+  .magazine-text{
+    font-size: 15px;
+  }
+  .info-video{
+    width: 90vw;
+  }
+  .info-text{
+    width: 90vw;
+    margin: 5%;
+    gap: 1.2em;
+    font-size: 1.5em;
+  }
+  .download-app img{
+    width: 20%;
+  }
+  .btn-load-more{
+    font-size: 3em;
+  }
+  .may-like-title{
+    font-size: 4em;
+  }
+  .email-input{
+    width: 90vw;
+  }
+  .email-input button{
+    font-size: 2.5em;
+  }
+  .contact-section > div{
+    margin: 2%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 0.5em;
+  }
+  .logo {
+    width: 30vw;
+    height: 12vh;
+  }
+  .nav {
+    font-size: 8px;
+  }
+  .title-text h1 {
+    font-size: 45px;
+  }
+  .search-bar {
+    height: 50px;
+  }
+  .search-bar h6 {
+    font-size: 1.5rem;
+  }
+  .magazine-text{
+    font-size: 12px;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 0.8em;
+  }
+  .logo {
+    width: 20vw;
+  }
+  .nav {
+    font-size: 10px;
+  }
+  .info-video{
+    width: 50vw;
+  }
+  .contact-section > div{
+    margin: 5%;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 0.8em;
+  }
+  .card {
+    min-width: 350px;
+    width: 500px;
+  }
+  .nav {
+    font-size: 10px;
+  }
+  .plates-title{
+    font-size: 40px;
+  }
+  .info-text{
+    width: 40vw;
+    margin: 5%;
+    gap: 1.2em;
+    font-size: 1.5em;
+  }
+  .info-video{
+    width: 45vw;
+  }
+}
